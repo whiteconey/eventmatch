@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="UTF-8">
+    <title>Создание</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page">
+
+        <header class="header">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-event">Event</span>
+                    <img class="logo-img" src="heart2.png">
+                    <span class="logo-event">Match</span>
+                </div>
+            
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="page_vhod.html" class="nav-link">Вход/регистрация</a>            
+                    <a href="page_mero.html" class="nav-link">Мероприятия</a>
+                    <a href="page_sozdanie.html" class="nav-link nav-active">Создание</a>
+                    <a href="page_sup.html" class="nav-link">Поддержка</a>
+                    <a href="page_inf.html" class="nav-link ">О нас</a>
+                </nav>           
+            </div>
+        </header>
+        
+        <main class="main3"> 
+        
+        <section>
+            <div class="text-main">
+                <h1 class="text-title">Обычное создание</h1>
+                <p class="text">
+                    Заполните все поля вручную и настройте детали
+                </p>
+                <form action="page_sozdanie.html" method="GET">
+
+                    <label class="text-title-event" for="nazv">Название мероприятия</label>
+                    <br><input type="text" name="input" value="" class="text-vhod" placeholder="Введите название" required id="nazv"/><br>
+    
+                    <label class="text-title-event" for="date">Дата и время</label>
+                    <br><input type="datetime-local" name="time" class="text-vhod" required id="date"/><br>
+
+                    <label class="text-title-event" for="g">Место проведения</label>
+                    <input type="text" name="text" value="" min="1" id="g" class="text-vhod" placeholder="Город, адрес" required/><br>
+
+                    <label for="type" class="text-title-event">Тип мероприятия</label>
+                    <select id="type" name="type_list" class="select" >
+                        <option value="delovie">Деловое</option>
+                        <option value="korp">Корпоративное</option>
+                        <option value="kult">Культурно-просветительское</option>
+                        <option value="obr">Образовательное</option>
+                        <option value="razvl">Развлекательное</option>
+                        <option value="blago">Благотворительное</option>
+                        <option value="dr" selected>Другое</option>
+                    </select>              
+                    
+                </form>
+                <div class="btn-box">
+                    <a href="#new" class="btn">Создать</a>
+                </div>
+            </div>
+
+            <div></div> 
+            
+            
+        </section>
+        <section>
+            <div class="text-main">
+                <h1 class="text-title">Создание с ИИ</h1>
+                <p class="text">
+                    Быстрое создание за 1 минуту
+                </p>
+                <form action="page_sozdanie.html" method="GET">
+
+                    <label class="text-title-event">Опишите ваше меропритие</label><br>
+                    <br>
+                    <textarea class="text-ai"></textarea>           
+                </form>
+                <div>
+                    <h1 class="text-title">Фильтры</h1>
+                    
+                    <details>  
+                        <summary class="text-title-event">Выбрать возраст гостей</summary>
+              
+                        <input type="radio" name="vozr" id="rad0" value="a1" class="rad-reg"/>
+                        <label for="rad0" class="text-title-event">0-14</label><br />
+                
+                        <input type="radio" name="vozr" id="rad2" value="a2" class="rad-reg"/>
+                        <label for="rad1" class="text-title-event">14-20</label><br />
+                
+                        <input type="radio" name="vozr" id="rad3" value="a3"  class="rad-reg"/>
+                        <label for="rad2" class="text-title-event">20-35</label><br>
+
+                        <input type="radio" name="vozr" id="rad3" value="a4" class="rad-reg"/>
+                        <label for="rad2" class="text-title-event">35+</label> 
+                        
+                    </details>
+                    <details>  
+                        <summary class="text-title-event">Выбрать тематику</summary>
+              
+                        <input type="radio" name="tm" id="rad0" value="a1" class="rad-reg"/>
+                        <label for="rad0" class="text-title-event">а1</label><br />
+                
+                        <input type="radio" name="tm" id="rad2" value="a2" class="rad-reg"/>
+                        <label for="rad1" class="text-title-event">а2</label><br />
+                
+                        <input type="radio" name="tm" id="rad3" value="a3"  class="rad-reg"/>
+                        <label for="rad2" class="text-title-event">а3</label><br>
+
+                        <input type="radio" name="tm" id="rad3" value="a4"  class="rad-reg"/>
+                        <label for="rad2" class="text-title-event">а4</label> 
+                        
+                    </details>
+                    <details>  
+                        <summary class="text-title-event">Количество человек</summary>
+              
+                        <input type="range" min="1" max="1000" value="0" oninput="disp.textContent=this.value" list="tickmarks" class="range-ch">
+                            <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="100">
+                            <option value="200">
+                            <option value="300">
+                            <option value="400">
+                            <option value="500">
+                            <option value="600">
+                            <option value="700">
+                            <option value="800">
+                            <option value="900">
+                            <option value="1000">
+                            </datalist> 
+                        <span id="disp">0</span>  
+                        
+                    </details>                 
+                </div>                
+                <div>
+                    <h1 class="text-title">Нейросеть автоматически</h1>
+                    <ul>
+                        <li class="li1">Подберет программу</li>
+                        <li class="li1">Создаст описание</li>
+                        <li class="li1">Предложит активности</li>                        
+                    </ul>
+                </div>                
+            
+                <div class="btn-box">                
+                <a href="#new" class="btn">Создать</a>
+                </div>
+            </div>
+        </section>
+     
+        </main>    
+
+
+        <footer class="my-footer">
+        <div>
+            <span class="logo-event">Event</span>
+            <img class="logo-img" src="heart2.png">
+            <span class="logo-event">Match</span>
+            <p></p>         
+        </div>
+        <div>
+            <h1 class="h-foot">Карта сайта</h1>
+            <ul class="ul-footer">
+                <li><a href="index.html" class="a-foot">Главная</a></li>
+                <li><a href="page_vhod.html" class="a-foot">Вход/регистрация</a> </li>
+                <li><a href="page_mero.html" class="a-foot">Мероприятия</a></li>
+                <li><a href="page_sozdanie.html" class="a-foot">Создание</a></li>
+                <li><a href="page_sup.html" class="a-foot">Поддержка</a></li>
+                <li><a href="page_inf.html" class="a-foot">О нас</a></li>
+            </ul>  
+            
+        </div>
+        <div>
+            <h1 class="h-foot">Контакты</h1> 
+            <ul class="ul-footer">
+                <a href="https://www.tiktok.com/ru-RU/" target="_blank"><img class="a-img" src="icon/tt.png" alt="TikTok"></a>
+                <a href="https://web.telegram.org/" target="_blank"><img class="a-img" src="icon/tg.png" alt="Telegram"></a>
+                <a href="https://vkvideo.ru/clip" target="_blank"><img class="a-img" src="icon/vk.png" alt="VK"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="a-img" src="icon/inst.png" alt="Instagram"></a>  
+            </ul>
+        </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="UTF-8">
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+
+<div class="page">
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-event">Event</span>
+                <img class="logo-img" src="heart2.png">
+                <span class="logo-match">Match</span>
+            </div>
+            
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="page_vhod.html" class="nav-link">Вход/регистрация</a>            
+                <a href="page_mero.html" class="nav-link  nav-active">Мероприятия</a>
+                <a href="page_sozdanie.html" class="nav-link">Создание</a>
+                <a href="page_sup.html" class="nav-link">Поддержка</a>
+                <a href="page_inf.html" class="nav-link">О нас</a>
+            </nav>           
+        </div>
+    </header>
+        
+    <main class="main2">
+        
+    <section class="events-section">
+        <h1 class="logo-mero">МЕРОПРИЯТИЯ</h1>
+
+    <div></div>
+          
+    <div class="events-grid">
+    <!-- Карточка 1 -->
+        <div class="event-card">
+        <h3 class="text-title-event al-cent">День Рождения</h3>
+        <div class="event-slider">
+            <input type="radio" name="birth" id="b1" checked>
+            <input type="radio" name="birth" id="b2">
+            <input type="radio" name="birth" id="b3">
+            
+            <div class="event-slider-track">
+            <div class="event-slider-item"><img src="icon/pic_bd.jpg" alt=""></div>
+            <div class="event-slider-item"><img src="icon/pic_bd2.jpg" alt=""></div>
+            <div class="event-slider-item"><img src="icon/pic_bd3.jpg" alt=""></div>
+            </div>
+            
+            <div class="event-slider-dots">
+            <label for="b1"></label>
+            <label for="b2"></label>
+            <label for="b3"></label>
+            </div>
+        </div>
+        <p class="text">
+            Найдите идеальную площадку для камерного ужина или масштабной вечеринки с друзьями.
+        </p>
+        <button class="btn">ПОДАТЬ ЗАЯВКУ</button>
+        </div>
+    <!-- Карточка 2 -->
+        <div class="event-card">
+        <h3 class="text-title-event al-cent">День Святого Валентина</h3>
+        <div class="event-slider">
+            <input type="radio" name="vd" id="v1" checked>
+            <input type="radio" name="vd" id="v2">
+            <input type="radio" name="vd" id="v3">
+            
+            <div class="event-slider-track">
+            <div class="event-slider-item"><img src="icon/pic_vd.jpg" alt=""></div>
+            <div class="event-slider-item"><img src="icon/pic_vd2.jpg" alt=""></div>
+            <div class="event-slider-item"><img src="icon/pic_vd3.jpg" alt=""></div>
+            </div>
+            
+            <div class="event-slider-dots">
+            <label for="v1"></label>
+            <label for="v2"></label>
+            <label for="v3"></label>
+            </div>
+        </div>
+        <p class="text">
+            Романтические мероприятия для влюблённых пар. Создайте особенную атмосферу.
+        </p>
+        <button class="btn" onclick="openForm()" >ПОДАТЬ ЗАЯВКУ</button>
+        </div>
+<!-- Карточка 3 -->
+        <div class="event-card">
+        <h3 class="text-title-event al-cent">Новый Год</h3>
+        <div class="event-slider">
+            <input type="radio" name="newy" id="n1" checked>
+            <input type="radio" name="newy" id="n2">
+            <input type="radio" name="newy" id="n3">
+            
+            <div class="event-slider-track">
+            <div class="event-slider-item"><img src="icon/pic_ny.jpg" alt=""></div>
+            <div class="event-slider-item"><img src="icon/pic_ny2.jpg" alt=""></div>
+            <div class="event-slider-item"><img src="icon/pic_ny3.jpg" alt=""></div>
+            </div>
+            
+            <div class="event-slider-dots">
+            <label for="n1"></label>
+            <label for="n2"></label>
+            <label for="n3"></label>
+            </div>
+        </div>
+        <p class="text">
+            Встречайте главный праздник года ярко: корпоративы, семейные торжества.
+        </p>
+        <button class="btn">ПОДАТЬ ЗАЯВКУ</button>
+        </div>
+<!-- Карточка 4 -->
+        <div class="event-card">
+        <h3 class="text-title-event al-cent">Вечеринка для девочек</h3>
+        <div class="event-slider">
+            <input type="radio" name="girls" id="g1" checked>
+            <input type="radio" name="girls" id="g2">
+            <input type="radio" name="girls" id="g3">
+            
+            <div class="event-slider-track">
+            <div class="event-slider-item"><img src="icon/pic_d.jpg" alt=""></div>
+            <div class="event-slider-item"><img src="icon/pic_d2.jpg" alt=""></div>
+            <div class="event-slider-item"><img src="icon/pic_d3.jpg" alt=""></div>
+            </div>
+            
+            <div class="event-slider-dots">
+            <label for="g1"></label>
+            <label for="g2"></label>
+            <label for="g3"></label>
+            </div>
+        </div>
+        <p class="text">
+            Вечеринки только для девочек: до свадьбы, для дня рождения или просто без повода.
+        </p>
+        <button class="btn">ПОДАТЬ ЗАЯВКУ</button>
+        </div>
+    
+    
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="page_calendar.html" class="btn" style="font-size: 20px; padding: 14px 32px;">
+            Календарь мероприятий
+        </a>
+    </div>
+
+        <div id="eventFormModal" class="modal">            
+            <div class="modal-content">  
+            <h1 class="text-title-event">Заявка на мероприятие "День Святого Валентина"</h1><br>
+
+                <form id="eventForm">                
+                    <input type="text" placeholder="Имя Фамилия" required class="modal1">
+                    <input type="email" placeholder="Email" required class="modal1">
+                    <input type="tel" placeholder="Телефон" required class="modal1">
+                    <input type="hidden" id="even-id" value="1">
+
+                    <div>
+                        <input type="checkbox" id="ch1" name="obr" class="ch"/>
+                        <label for="obr" class="text">Согласен на обработку персональных данных</label>
+                        <br>
+                        <input type="checkbox" id="ch2" name="uved" checked class="ch"/>
+                        <label for="uved" class="text">Хочу получать все обновления на почту</label>
+                    </div>
+                    <br>                        
+
+                    <button type="submit" class="btn">отправить</button>
+                    <button class="btn" onclick="closeForm()" >закрыть</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    </main>
+
+
+    <footer class="my-footer">
+        <div>
+            <span class="logo-event">Event</span>
+            <img class="logo-img" src="heart2.png">
+            <span class="logo-event">Match</span>
+            <p></p>         
+        </div>
+        <div>
+            <h1 class="h-foot">Карта сайта</h1>
+            <ul class="ul-footer">
+                <li><a href="index.html" class="a-foot">Главная</a></li>
+                <li><a href="page_vhod.html" class="a-foot">Вход/регистрация</a> </li>
+                <li><a href="page_mero.html" class="a-foot">Мероприятия</a></li>
+                <li><a href="page_sozdanie.html" class="a-foot">Создание</a></li>
+                <li><a href="page_sup.html" class="a-foot">Поддержка</a></li>
+                <li><a href="page_inf.html" class="a-foot">О нас</a></li>
+            </ul>  
+            
+        </div>
+        <div>
+            <h1 class="h-foot">Контакты</h1> 
+            <ul class="ul-footer">
+                <a href="https://www.tiktok.com/ru-RU/" target="_blank"><img class="a-img" src="icon/tt.png" alt="TikTok"></a>
+                <a href="https://web.telegram.org/" target="_blank"><img class="a-img" src="icon/tg.png" alt="Telegram"></a>
+                <a href="https://vkvideo.ru/clip" target="_blank"><img class="a-img" src="icon/vk.png" alt="VK"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="a-img" src="icon/inst.png" alt="Instagram"></a>  
+            </ul>
+        </div>
+        </footer>
+
+</body>
+
+</html>

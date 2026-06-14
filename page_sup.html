@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="UTF-8"> 
+    <title>Поддержка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page">
+
+        <header class="header">
+            <div class="header-inner">
+                <div class="logo">
+                    <span class="logo-event">Event</span>
+                    <img class="logo-img" src="heart2.png">
+                    <span class="logo-event">Match</span>
+                </div>
+            
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="page_vhod.html" class="nav-link">Вход/регистрация</a>            
+                    <a href="page_mero.html" class="nav-link">Мероприятия</a>
+                    <a href="page_sozdanie.html" class="nav-link">Создание</a>
+                    <a href="page_sup.html" class="nav-link  nav-active">Поддержка</a>
+                    <a href="page_inf.html" class="nav-link ">О нас</a>
+                </nav>           
+            </div>
+        </header>
+        
+        <main class="main3">
+            <section>     
+        
+            <div class="text-main">
+                <h1 class="text-title">Опишите вашу проблему</h1>
+                <form action="page_sup.html" method="GET">
+                    
+                    <label for="type" class="text-title-event">Тип проблемы</label>
+                    <select id="type" name="type_list" class="select" placeholder="...">                        
+                        <option value="a1">Инцидент</option>
+                        <option value="a2">Запрос на обслуживание</option>
+                        <option value="a3">Вопрос</option>
+                        <option value="a4">Жалоба</option>
+                        <option value="a5" selected>Другое</option>
+                    </select>
+                    <br>
+                    <label for="type" class="text-title-event">Приоритет</label><br>
+                
+                    <input type="radio" name="prio" id="rad0" value="p1" class="rad-reg"/>
+                    <label for="rad0" class="text-title-event">Высокий</label><br />
+                
+                    <input type="radio" name="prio" id="rad2" value="p2" class="rad-reg"/>
+                    <label for="rad1" class="text-title-event">Средний</label><br />
+                
+                    <input type="radio" name="prio" id="rad3" value="p3" class="rad-reg"/>
+                    <label for="rad2" class="text-title-event">Низкий</label>
+                    <br><br>
+                    <label for="type" class="text-title-event" for="t1">Тема проблемы</label>
+                    <input type="text" name="input" value="" class="text-vhod" placeholder="Тема заявки" required id="t1"/><br>
+                    <label for="type" class="text-title-event" for="t1">Описание</label>
+                    <textarea class="text-sup" placeholder="Текст заявки..."></textarea> 
+                    <br>
+                    <label class="text-title-event" for="t1">Ваш номер телефона</label>
+                    <br><input type="tel" name="input" value="" class="text-vhod" placeholder="+7 921 *** ****" required id="t1"/>        
+                </form>
+                <div class="btn-box">                
+                    <a href="#new" class="btn">Создать</a>
+                </div>
+            </div>
+            </section>   
+
+            <section>
+            <div class="text-main-nogap">
+                <h1 class="text-title">Частые вопросы EventMatch
+                </h1>
+                <br>
+                <details class="faq-item">  
+                    <summary class="text-title-event">Что такое EventMatch?  </summary> 
+                    <label class="text-sup2">EventMatch — платформа для поиска и организации мероприятий. 
+                        Регистрация, поиск событий, покупка билетов, создание событий, AI-рекомендации.</label><br/>  
+                </details>
+                <br>
+                <details class="faq-item">  
+                    <summary class="text-title-event">Как зарегистрироваться? </summary> 
+                    <label class="text-sup2">На главной странице нажмите "Войти/Регистрация", заполните форму 
+                        (email, пароль), подтвердите email или SMS. QR-код для быстрой регистрации.</label><br/>  
+                </details>
+                <br>
+                <details class="faq-item">  
+                    <summary class="text-title-event">QR-код зачем?</summary> 
+                    <label class="text-sup2">QR-код для входа на мероприятия. Сканируйте на входе, проверка билета мгновенная.</label><br/>  
+                </details>
+                <br>
+                <details class="faq-item">  
+                    <summary class="text-title-event">Как купить билет?</summary> 
+                    <label class="text-sup2">Выберите мероприятие, нажмите "Купить билет", выберите места, оплатите картой. 
+                        Билет на email/SMS.</label><br/>  
+                </details>
+                <br>
+                <details class="faq-item">  
+                    <summary class="text-title-event">Как создать событие?</summary> 
+                    <label class="text-sup2">В личном кабинете "Мои события" → "Создать", заполните детали (название, дата, место, описание), опубликуйте.</label><br/>  
+                </details>
+                <br>
+                <details class="faq-item">  
+                    <summary class="text-title-event">Безопасность данных?</summary> 
+                    <label class="text-sup2">EventMatch использует шифрование, GDPR-соответствие, QR-коды. 100% защита платежей.</label><br/>  
+                </details>
+                <br>
+                <details class="faq-item">  
+                    <summary class="text-title-event">Контакты поддержки?</summary> 
+                    <label class="text-sup2">Email: support@eventmatch.ru. Ответ в течение 24 часов. Телефон: +7 (812) 123-45-67.</label><br/>  
+                </details>                
+
+            </div>
+            
+            <br>
+
+            <div class="text-main">
+                <h4 class="text-title">Контакты</h4>
+                <p class="text-info">support@eventmatch.ru</p>
+                <p class="text-info">+7 (812) 123-45-67 (Пн-Пт, 9:00-18:00)</p>
+                <p><a href="#" class="nav-link">Политика конфиденциальности</a></p>
+            </div>
+            </section>
+        </main>    
+
+
+        <footer class="my-footer">
+        <div>
+            <span class="logo-event">Event</span>
+            <img class="logo-img" src="heart2.png">
+            <span class="logo-event">Match</span>
+            <p></p>         
+        </div>
+        <div>
+            <h1 class="h-foot">Карта сайта</h1>
+            <ul class="ul-footer">
+                <li><a href="index.html" class="a-foot">Главная</a></li>
+                <li><a href="page_vhod.html" class="a-foot">Вход/регистрация</a> </li>
+                <li><a href="page_mero.html" class="a-foot">Мероприятия</a></li>
+                <li><a href="page_sozdanie.html" class="a-foot">Создание</a></li>
+                <li><a href="page_sup.html" class="a-foot">Поддержка</a></li>
+                <li><a href="page_inf.html" class="a-foot">О нас</a></li>
+            </ul>  
+            
+        </div>
+        <div>
+            <h1 class="h-foot">Контакты</h1> 
+            <ul class="ul-footer">
+                <a href="https://www.tiktok.com/ru-RU/" target="_blank"><img class="a-img" src="icon/tt.png" alt="TikTok"></a>
+                <a href="https://web.telegram.org/" target="_blank"><img class="a-img" src="icon/tg.png" alt="Telegram"></a>
+                <a href="https://vkvideo.ru/clip" target="_blank"><img class="a-img" src="icon/vk.png" alt="VK"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="a-img" src="icon/inst.png" alt="Instagram"></a>  
+            </ul>
+        </div>
+        </footer>
+    </div>
+</body>
+</html>

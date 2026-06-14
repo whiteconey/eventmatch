@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="fon">
+
+    <div class="page">
+        <header>            
+                <div class="logo">
+                    <a href="index.html"><span class="logo-green">Event Match</span></a>                    
+            
+                </div>  
+        </header>
+
+        <main class="main2"> 
+            <section  class="vhod-main">  
+                   <label class="text-title">Зарегистрируйтесь у нас на сайте!</label><br>           
+                <form action="page_vhod.html" method="GET" target="_blank" class="form-reg">
+
+                    <label class="text-title-event" for="t1">Введите Ваш номер телефона</label>
+                    <br><input type="tel" name="input" value="" class="text-vhod" placeholder="+7 9211111111" required id="t1" maxlength="12"
+                    oninput="this.value = this.value.replace(/[^0-9 +]/g, '');" pattern="\+7[0-9]{10}"/><br>
+    
+                    <label class="text-title-event" for="e1">Ваш E-mail:</label>
+                    <br><input type="email" name="user_email" value="" class="text-vhod" placeholder="eventmatch@gmail.com" required id="e1" maxlength="256"/><br>
+                    
+                    <fieldset class="">
+                        <legend class="text-title-event">Ваш пол:</legend>
+                
+                        <input type="radio" name="gen" id="rad0" value="male" class="rad-reg"/>
+                        <label for="rad0" class="text-title-event">Мужчина</label><br />
+                
+                        <input type="radio" name="gen" id="rad2" value="female" class="rad-reg"/>
+                        <label for="rad1" class="text-title-event">Женщина</label><br />
+                
+                        <input type="radio" name="gen" id="rad3" value="no" checked class="rad-reg"/>
+                        <label for="rad2" class="text-title-event">Не скажу</label>
+                
+                    </fieldset><br>
+
+                    <label class="text-title-event" for="n1">Введите ваш возраст</label>
+                    <input type="number" name="num" value="" min="1" max="100" id="n1" class="text-vhod" placeholder="20" required/><br>
+
+                    <label class="text-title-event" for="pas"> Придумайте пароль</label>
+                    <input type="password" name="pass" value="" class="text-vhod" placeholder="123456Ab" required minlength="6" maxlength="20" id="pas"/>               
+                    
+                    <div class="btn-box">
+                        <!-- <a href="page_vhod.html" class="btn">Зарегистрироваться</a> -->
+                        <button type="submit" class="btn">Зарегистрироваться</button>
+                    </div>
+                
+                </form>
+                
+            </section>        
+        </main>
+    </div>
+
+</body>
+
+</html>

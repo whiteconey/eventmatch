@@ -1,0 +1,27 @@
+{
+    "app_name": "eventmatch",
+    "main": "index.html",
+    "name": "eventmatch",
+    "webexe_settings": {
+        "download_dir": "D:/whiteconey/\u041a\u041e\u041b\u041b\u0415\u0414\u0416",
+        "force_download": false,
+        "nw_compression_level": 0,
+        "sdk_build": false,
+        "uncompressed_folder": false,
+        "windows-x32": true,
+        "windows-x64": true
+    },
+    "webkit": {},
+    "window": {
+        "exe_icon": "eventmatchICON.jpg",
+        "frame": true,
+        "icon": "eventmatchICON.jpg",
+        "id": "eventmatch",
+        "mac_icon": "eventmatchICON.jpg",
+        "resizable": true,
+        "show": true,
+        "show_in_taskbar": true,
+        "title": "eventmatch",
+        "visible": true
+    }
+}
